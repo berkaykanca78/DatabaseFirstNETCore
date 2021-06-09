@@ -1,0 +1,47 @@
+﻿@model IEnumerable<DatabaseFirstCore.Models.Oyuncu>
+
+<div class="text-center">
+    <div>
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Adi)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Soyadi)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Yasi)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Maas)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SozlesmeSuresi)
+                </th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Adi)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Soyadi)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Yasi)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Maas)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SozlesmeSuresi)
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+</div>
