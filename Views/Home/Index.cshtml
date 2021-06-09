@@ -1,4 +1,4 @@
-﻿@model IEnumerable<DatabaseFirstCore.Models.Oyuncu>
+﻿@model IEnumerable<ListeViewModel>
 
 <div class="text-center">
     <div>
@@ -20,13 +20,13 @@
                     @Html.DisplayNameFor(model => model.SozlesmeSuresi)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.MevkiNavigation.MevkiAdi)
+                    @Html.DisplayNameFor(model => model.MevkiAdi)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.UlkeNavigation.UlkeAdi)
+                    @Html.DisplayNameFor(model => model.UlkeAdi)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.Takim.TakimAdi)
+                    @Html.DisplayNameFor(model => model.TakimAdi)
                 </th>
             </tr>
 
@@ -49,13 +49,13 @@
                         @Html.DisplayFor(modelItem => item.SozlesmeSuresi)
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.MevkiNavigation.MevkiAdi)
+                        @Html.DisplayFor(modelItem => item.MevkiAdi)
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.UlkeNavigation.UlkeAdi)
+                        @Html.DisplayFor(modelItem => item.UlkeAdi)
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.Takim.TakimAdi)
+                        @Html.DisplayFor(modelItem => item.TakimAdi)
                     </td>
                 </tr>
             }
