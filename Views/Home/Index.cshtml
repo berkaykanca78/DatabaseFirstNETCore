@@ -19,6 +19,15 @@
                 <th>
                     @Html.DisplayNameFor(model => model.SozlesmeSuresi)
                 </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MevkiNavigation.MevkiAdi)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.UlkeNavigation.UlkeAdi)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Takim.TakimAdi)
+                </th>
             </tr>
 
             @foreach (var item in Model)
@@ -38,6 +47,15 @@
                     </td>
                     <td>
                         @Html.DisplayFor(modelItem => item.SozlesmeSuresi)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MevkiNavigation.MevkiAdi)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UlkeNavigation.UlkeAdi)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Takim.TakimAdi)
                     </td>
                 </tr>
             }

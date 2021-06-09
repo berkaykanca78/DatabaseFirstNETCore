@@ -77,3 +77,5 @@ D:\Dosyalar\Projeler\ASP.NET\DatabaseFirstCore\obj\Debug\netcoreapp3.1\DatabaseF
 D:\Dosyalar\Projeler\ASP.NET\DatabaseFirstCore\obj\Debug\netcoreapp3.1\DatabaseFirstCore.dll
 D:\Dosyalar\Projeler\ASP.NET\DatabaseFirstCore\obj\Debug\netcoreapp3.1\DatabaseFirstCore.pdb
 D:\Dosyalar\Projeler\ASP.NET\DatabaseFirstCore\obj\Debug\netcoreapp3.1\DatabaseFirstCore.genruntimeconfig.cache
+D:\Dosyalar\Projeler\ASP.NET\DatabaseFirstCore\bin\Debug\netcoreapp3.1\Castle.Core.dll
+D:\Dosyalar\Projeler\ASP.NET\DatabaseFirstCore\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Proxies.dll

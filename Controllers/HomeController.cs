@@ -1,5 +1,6 @@
 ﻿using DatabaseFirstCore.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System.Diagnostics;
 using System.Linq;
@@ -19,7 +20,7 @@ namespace DatabaseFirstCore.Controllers
 
         public IActionResult Index()
         {
-            var list = _context.Oyuncus.ToList();
+            var list = _context.Oyuncus.Include(a => a.MevkiNavigation).ThenInclude(a => a.Oyuncus).ThenInclude(a => a.Takim).ThenInclude(a => a.Oyuncus).ThenInclude(a => a.UlkeNavigation);
             return View(list);
         }
 
